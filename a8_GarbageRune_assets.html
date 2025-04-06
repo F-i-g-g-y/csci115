@@ -1,0 +1,182 @@
+<!--Nicholas Biagioni 657481776, Final Mini Project (Lab 8) -->
+<!--TO BE ADDED:
+        jQuery functionality to link common html elements (so that updates will be universal)
+        External CSS for multiple pages
+        AJAX to optimize what is reloaded when navigating website
+        hyperlink bookmarks for navigating documentation
+        hyperlink email in contacts page
+        hyperlink internal/relative/absolute address links to Home, Docs, Resources, Contact
+        box model, nesting/floating (maybe for organizing the Assets page?)
+        Webforms (Need to double check what this means)
+
+        -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Placeholder Name</title>
+    <link rel ="stylesheet" href="a8q1.css">
+</head>
+<body style="background-color: #464343";>
+    <!--Banner HTML-->
+    <div class="banner_background">
+        <div class="centered" style="top: -8px;">
+            <img src="temp_website_Assets\Lab8_websiteBanner_updated.png" alt="Placeholder Name Banner">
+        </div>
+    </div>
+    <!--END of Banner HTML-->
+    <div class="body_gradient"> <!--does this need to encompass code?-->
+        <!--Navigation Bar HTML code-->
+        <nav class="navbar">
+            <ul>
+                <li><a href="a8q1_homepage.html">Home</a></li>
+                <li><a href="a8_documents.html">Projects</a></li>
+                <li><a href="a8_resources.html">Resources</a></li>
+                <li><a href="a8_assets.html">Assets</a></li>
+                <li><a href="a8_contact.html">Contact</a></li>
+                <div class="search1"> 
+                    <input type="text" name="search" id="search" placeholder="Search this website"> 
+                </div>
+            </ul>
+        </nav>
+        <!--END of Navigation Bar HTML code-->
+        <div class="content_box">
+            <div> <h1>Garbage Run - Assets</h1> </div>
+            <div class=" page_overview_box">
+                <b>This page contains a list of assets specific to Garbage Run. </b>
+                <!--Make these (Projects), (Resources), (Assets) into links to the corresponding pages-->
+                <p>On this page you will find direct links to the pages of assets used by the project, as well as links to project specific resources. </p>
+            </div>
+            <div class=" doc_and_quickAccess_container">
+                <!--DOCUMENTATION SEGMENT!-->
+            <div class="documentation_container" style = "font-size: 14px; margin-top: 0px;"> 
+                <h3>Asset Links go here:</h3>
+                <ul>
+                    <li></li>
+                </ul>
+                <h3>Learning Resource Links go here:</h3>
+                <ul>
+                    <li></li>
+                </ul>
+            </div>
+            <!-----------Below is the HTML for the Quick Access------------->
+                <div class="collapsible_container">
+                        <div style="margin: 0px 0px -3px;"><p style="text-align: center; font-size: 20px;"> <u>Quick Access</u> </p> </div>
+                            <!--Below can be used as template for adding new Quick Access Items-->
+                        <button type="button" class = "quick_access_collapsible" style ="background-color: rgba(0, 0, 255, 0.623); text-shadow: 1px 1px black;">Template Game  -  🎮</button>
+                        <div class="quick_access_content" style = "border-color: rgba(0, 0, 255, 0.623);"><p>Brief summary of project</p>
+                            <table>
+                                <tr>
+                                    <td>
+                                        <a href="https://itch.io/">itch.io</a>
+                                    </td>
+                                    <td>
+                                        <a href="a8_TemplateGame_docs.html">Documentation</a>
+                                    </td>
+                                    <td>
+                                        <a href="a8_TemplateGame_assets.html">Assets</a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <!--End of Quick Access button template-->
+                        <button type="button" class = "quick_access_collapsible" style ="background-color: rgba(35, 145, 62, 0.623); text-shadow: 1px 1px black;">labRATory  -  🐭</button>
+                        <div class="quick_access_content" style = "border-color: rgba(35, 145, 62, 0.623);"><p>labRATory brief summary.</p>
+                            <table>
+                                <tr>
+                                    <td>
+                                        <a href="https://itch.io/">itch.io</a>
+                                    </td>
+                                    <td>
+                                        <a href="a8_labRATory_docs.html">Documentation</a>
+                                    </td>
+                                    <td>
+                                        <a href="a8_labRATory_assets.html">Assets</a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <!--end of labRATory tab-->
+                        <button type="button" class = "quick_access_collapsible" style ="background-color: rgba(199, 6, 38, 0.767); text-shadow: 1px 1px black;">All a Loon  -  🦆</button>
+                        <div class="quick_access_content" style = "border-color: rgba(199, 6, 38, 0.767);"><p>Brief Summary/tag line of All a Loon</p>
+                            <table>
+                                <tr>
+                                    <td>
+                                        <a href="https://itch.io/">itch.io</a>
+                                    </td>
+                                    <td>
+                                        <a href="a8_AllaLoon_docs.html">Documentation</a>
+                                    </td>
+                                    <td>
+                                        <a href="a8_AllaLoon_assets.html">Assets</a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <!--End of All a Loon-->
+                        <button type="button" class = "quick_access_collapsible" style ="background-color: rgba(100, 57, 40, 0.767); text-shadow: 1px 1px black;">Garbage Run - 🗑️</button>
+                        <div class="quick_access_content" style = "border-color: rgba(100, 57, 40, 0.767);"><p>Brief Summary/tag line of Garbage Run</p>
+                            <table>
+                                <tr>
+                                    <td>
+                                        <a href="https://itch.io/">itch.io</a>
+                                    </td>
+                                    <td>
+                                        <a href="a8_GarbageRun_docs.html">Documentation</a>
+                                    </td>
+                                    <td>
+                                        <a href="a8_GarbageRune_assets.html">Assets</a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <!--end of Garbage Run-->
+                        <button type="button" class = "quick_access_collapsible" style ="background-color: rgb(160, 158, 55); text-shadow: 1px 1px black;">CannonCube - 🔳</button>
+                        <div class="quick_access_content" style = "border-color: rgb(160, 158, 55);"><p>Brief Summary/tag line of CannonCube</p>
+                            <table>
+                                <tr>
+                                    <td>
+                                        <a href="https://itch.io/">itch.io</a>
+                                    </td>
+                                    <td>
+                                        <a href="a8_CannonCube_docs.html">Documentation</a>
+                                    </td>
+                                    <td>
+                                        <a href="a8_CannonCube_assets.html">Assets</a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <!--End of CannonCube-->
+                    <!-------------End of Quick Access HTML ---------------->
+                    <!--Start of In page Navigation-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src = "http://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js">
+    </script>
+    <!--can potentially use .load to clean up code, for instance, put all the Quick Access HTML into a separate file -->
+    <!--!!!Need to figure out AJAX to only load necessities-->
+    <script> 
+        //Code here heavily derived from W3Schools Collapsible How to. https://www.w3schools.com/howto/howto_js_collapsible.asp
+        //(ended up fully copying after running into bugs, however they were unrelated to my versions variations, will try to come back and trim to personal use case)
+        //implement jQuery somehow?
+        var coll = document.getElementsByClassName("quick_access_collapsible");
+        var i;
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                    content.style.display = "none";
+                } else {
+                    content.style.display = "block";
+                }
+            });
+        }
+        
+    </script>
+</body>
+</html>
